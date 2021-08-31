@@ -27,7 +27,7 @@ Our demo video: N/A
 
 	* Van Phuong Truc: 
 
-	* Jang Moon Suk: 
+	* Jang Moon Suk: s3877629
 
 	* Hoang Anh Quan: s3818278
 
