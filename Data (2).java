@@ -22,7 +22,7 @@ class Request
         this.BeginDate = sc.nextLine();
         System.out.print ( "Please enter ending date: " );
         this.EndDate = sc.nextLine();
-        System.out.print ( "Please enter quantity of each group: " );
+        System.out.print ( "Please enter the number of days for datagrouping: " );
         this.NumofGroup = sc.nextInt();
     }
     public void inputPick()
