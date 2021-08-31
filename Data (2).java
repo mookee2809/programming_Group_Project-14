@@ -19,9 +19,13 @@ class Request
         System.out.print ( "Please enter country/continent: " );
         this.LocationRequest = sc.nextLine();
         System.out.print ( "Please enter beginning date: " );
-        this.BeginDate = sc.nextLine();
+        this.BeginDate = MyToys.getDate("Input First Date(Date/Month/Year)): ", "Your input must be under "
+                + "the format of (Date/Month/Year), Date/Month/Year stands for digits",
+                "^(([0]?[1-9]|1[012])/([0]?[1-9]|[12][0-9]|3[01])/(2020|2021))");
         System.out.print ( "Please enter ending date: " );
-        this.EndDate = sc.nextLine();
+        this.EndDate = MyToys.getDate("Input Last Date(Date/Month/Year)): ", "Your input must be under "
+                + "the format of (Date/Month/Year), Date/Month/Year stands for digits",
+                "^(([0]?[1-9]|1[012])/([0]?[1-9]|[12][0-9]|3[01])/(2020|2021))");
         System.out.print ( "Please enter the number of days for datagrouping: " );
         this.NumofGroup = sc.nextInt();
     }
