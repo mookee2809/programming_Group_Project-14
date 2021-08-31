@@ -25,7 +25,7 @@ Our demo video: N/A
 
 * Group Members:
 
-	* Van Phuong Truc: 
+	* Van Phuong Truc: s3818484
 
 	* Jang Moon Suk: s3877629
 
