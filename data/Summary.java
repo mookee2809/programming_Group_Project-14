@@ -11,22 +11,26 @@ public class Summary {
     public int NumofGroup;
     public int pick;
 
+    public Summary() {
+    }
+
     public void StartEndDate() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter some information following below");
         System.out.print("Please enter country/continent: ");
         this.LocationRequest = sc.nextLine();
-        System.out.print("Please enter beginning date: ");
-        this.BeginDate = MyToys.getDate("Input First Date(Date/Month/Year)): ", "Your input must be under "
-                + "the format of (Date/Month/Year), Date/Month/Year stands for digits",
+
+        this.BeginDate = MyToys.getDate("Please Input Beginning Date(Month/Date/Year)): ", "Your input must be under "
+                + "the format of (Month/Date/Year), Month/Date/Year stands for digits",
                 "^(([0]?[1-9]|1[012])/([0]?[1-9]|[12][0-9]|3[01])/(2020|2021))");
-        System.out.print("Please enter ending date: ");
-        this.EndDate = MyToys.getDate("Input Last Date(Date/Month/Year)): ", "Your input must be under "
-                + "the format of (Date/Month/Year), Date/Month/Year stands for digits",
+
+        this.EndDate = MyToys.getDate("Please Input Ending Date(Month/Date/Year)): ", "Your input must be under "
+                + "the format of (Month/Date/Year), Month/Date/Year stands for digits",
                 "^(([0]?[1-9]|1[012])/([0]?[1-9]|[12][0-9]|3[01])/(2020|2021))");
         System.out.print("Please enter the number of days for datagrouping: ");
         this.NumofGroup = sc.nextInt();
+        MyMenu();
     }
 
     public void inputPick() {
@@ -43,6 +47,7 @@ public class Summary {
         System.out.println("Please enter number (1,2,3) depending on which information you want to display! ");
         System.out.println("1) Show New Cases \n2) Show New Deaths \n3) Show Vaccinated People");
         System.out.println("---------------------------------------------------------------------------------");
+        
     }
 
     public void display_menu() {
@@ -107,16 +112,16 @@ public class Summary {
         boolean test = true;
         while (test == true) {
             //input information
-            Summary request = new Summary();
+            Summary summary = new Summary();
             //request.StartEndDate();
             enterInfo();
             enterChart();
 
             //Creating Object AnalyzeDate
-            AnalyzeData DataTest = new AnalyzeData();
+            AnalyzeData Data = new AnalyzeData();
             //reading file
-            FromFile file = new FromFile();
-            file.ReadingAndCheckFile(request, DataTest);
+            FileChecking file = new FileChecking();
+            file.ReadingAndCheckFile(summary, Data);
 
             //display
             System.out.println("---------------------------------------------------------------------------------");
@@ -126,15 +131,15 @@ public class Summary {
                 switch (infor) {
                     case 1:
                         System.out.println("__________________________________________");
-                        DataTest.displayAfterChecking_NewCase();
+                        Data.displayAfterChecking_NewCase();
                         break;
                     case 2:
                         System.out.println("__________________________________________");
-                        DataTest.displayAfterChecking_NewDeath();
+                        Data.displayAfterChecking_NewDeath();
                         break;
                     case 3:
                         System.out.println("__________________________________________");
-                        DataTest.displayAfterChecking_Vaccinated();
+                        Data.displayAfterChecking_Vaccinated();
                         break;
                     default:
                         System.out.println("Problem of enter information variable!");
@@ -142,7 +147,7 @@ public class Summary {
                 }
             } else {
                 System.out.println("__________________________________________");
-                DataTest.displayChart();
+                Data.displayChart();
             }
 
             //continue
@@ -156,3 +161,4 @@ public class Summary {
     }
 
 }
+
