@@ -30,7 +30,7 @@ public class Summary {
                 "^(([0]?[1-9]|1[012])/([0]?[1-9]|[12][0-9]|3[01])/(2020|2021))");
         System.out.print("Please enter the number of days for datagrouping: ");
         this.NumofGroup = sc.nextInt();
-        MyMenu();
+        
     }
 
     public void inputPick() {
@@ -113,7 +113,7 @@ public class Summary {
         while (test == true) {
             //input information
             Summary summary = new Summary();
-            //request.StartEndDate();
+            summary.StartEndDate();
             enterInfo();
             enterChart();
 
