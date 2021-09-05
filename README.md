@@ -23,7 +23,7 @@ This group project is about a program that helps user search and present data by
 
 Please follow this directory to access and run the program: GroupAssignment/src/Main.java
 
-Our Youtube demo video: N/A
+Our Youtube demo video: https://youtu.be/hJRp4CnpcPY
 
 * Group Members:
 
@@ -33,7 +33,7 @@ Our Youtube demo video: N/A
 
 	* Hoang Anh Quan: s3818278
 
-* Overall, all contribution of each member in our group are the same. We all agree that the task is distributed equally and fairly for everyone. The group assigment is start from week 5 to week 10 in 2020, 2 semester. Our group has a daily 3-hours-online-meeting that all member can distribute and working together. The detail tasks of each member in the team will be show below:
+* Overall, all contribution of each member in our group are the same. We all agree that the task is distributed equally and fairly for everyone. The group assigment is start from week 5 to week 10 in 2020, 2 semester. The detail tasks of each member in the team will be show below:
 	
 	
 	* Data 
@@ -46,7 +46,7 @@ Our Youtube demo video: N/A
              
 	* Summary 
          
-		* Van Phuong Truc: number of group function, group data function, new total function, check divisible function.
+		* Van Phuong Truc: number of group function, group data function, new total function, check divisible function, convert group of time to array function.
 
 		* Jang Moon Suk: fetch data function, choose result type function, up to function, convert group of time to array function.
 
@@ -62,9 +62,9 @@ Our Youtube demo video: N/A
 	
 	* User interaface 
         
-		* Van Phuong Truc: supports User interface function.
+		* Van Phuong Truc: user interface fucntion.
 
-		* Jang Moon Suk: user interface fucntion.
+		* Jang Moon Suk: supports User interface function.
 
 		* Hoang Anh Quan: supports User interface function.
 
